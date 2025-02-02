@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Dating App</title>
+  </head>
+  <body>
+    <h1>Enter Your Details For Our Dating Website</h1>
+
+    <form
+      action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Your Face</legend>
+        <div>
+          <label for="avatar">Upload Your Image:</label>
+          <input type="file" name="avatar" id="avatar" required />
+        </div>
+        <div>
+          <p>Image Preview:</p>
+          <img id="preview" alt="My Pic" width="500" />
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="https://url.nucamp.co/datingjs"></script>
+  </body>
+</html>
